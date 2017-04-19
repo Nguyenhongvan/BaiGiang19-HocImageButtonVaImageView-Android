@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vansuzy.baigiang19_hocimagebuttonvaimageview.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn muốn hiển thị hình nào?"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radHinhNha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiển thị hình nhà"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/radHinhNguoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiển thị hình người"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="381dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.18"
+        android:src="@drawable/employee"/>
+
+    <ImageButton
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/close"/>
+
+</LinearLayout>
